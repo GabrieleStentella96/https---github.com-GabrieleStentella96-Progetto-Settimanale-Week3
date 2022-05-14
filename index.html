@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calcolatrice in JavaScript</title>
+</head>
+<body>
+    
+    <div class="calcolatrice">
+
+        <form name="form">
+          <input id="barra" name="barra" value="" placeholder="0">
+        </form> 
+          <table id="calc">     
+            <tr>
+              <td><input type="button" id="number" value="7" onclick="digit(7)"></td>
+              <td><input type="button" id="number" value="8" onclick="digit(8)"></td>
+              <td><input type="button" id="number" value="9" onclick="digit(9)"></td>
+              <td><input type="button" id="operation1" value="/" onclick="operationDivide()"></td>
+            </tr>      
+            <tr>
+              <td><input type="button" id="number" value="4" onclick="digit(4)"></td>
+              <td><input type="button" id="number" value="5" onclick="digit(5)"></td>
+              <td><input type="button" id="number" value="6" onclick="digit(6)"></td>
+              <td><input type="button" id="operation2" value="x" onclick="operationMultiple()"></td>
+            </tr>      
+            <tr>
+              <td><input type="button" id="number1" value="1" onclick="digit(1)"></td>
+              <td><input type="button" id="numer2" value="2" onclick="digit(2)"></td>
+              <td><input type="button" id="numer" value="3" onclick="digit(3)"></td>
+              <td><input type="button" id="operation3" value="-" onclick="operationMinus()"></td>
+            </tr>  
+            <tr>
+              <td><input type="button" id="erase" value="C" onclick="reset()"></td>
+              <td><input type="button" id="number" value="0" onclick="digit('0')"></td>
+              <td><input type="button" id="number" value="."onclick="digit('.')"></td>
+              <td><input type="button" id="operation4" value="+" onclick="operationPlus()"></td>
+            </tr>
+            <tr>
+               <td><input type="button" id="radice" value="√" onclick="radiceQuadrata()"></td>
+               <td><input type="button" id="number" value="π" onclick="digit('3,141592653')"></td>
+               <td><input type="button" id="number" value="e" onclick="digit('2,7182818284')"></td>
+               <td><input type="button" id="result" value="=" onclick="result()"></td>
+            </tr>
+            </table>
+           
+        
+      </div>
+
+      
+
+
+      <script src="js/script.js"></script>
+</body>
+</html>
