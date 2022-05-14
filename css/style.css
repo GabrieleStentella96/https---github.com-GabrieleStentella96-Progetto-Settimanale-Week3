@@ -1,21 +1,22 @@
 body {
-    background-image: linear-gradient(52deg, #7efafb 1%, #ffb8ee 99%);
+    background-color: #ffffff;
 }
 
-#barra, #calc input {
+#calc input, #barra {
     font-size: 50px;
-    border-radius: 100%;
     background-color: #000000;
     
 }
 
+
 #barra {
     width:610px;
     height:100px;
-    text-align: center;
+    text-align: right;
     margin-left: 0.2rem;
     color: #ffffff;
-     
+    border-radius: 5%;
+
       
 }
 
@@ -23,6 +24,7 @@ body {
     width:150px;
     height:100px;
     margin:1px;
+    border-radius: 20%;
     color: #ffffff;
     
 

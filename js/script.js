@@ -35,7 +35,7 @@ function operationPlus () {
 }
 
 
-let primoMembro 
+let primoMembro
 function result() {
       
     primoMembro = document.getElementById('barra').value
@@ -59,6 +59,7 @@ function result() {
         barra = +secondoMembro[0] / +secondoMembro[1]
         document.getElementById('barra').value = barra
     } 
+
 }
 
 
@@ -67,3 +68,4 @@ function radiceQuadrata () {
     let radiceQuadrata = +(document.getElementById('barra').value);
     document.getElementById('barra').value = Math.sqrt(radiceQuadrata)
 }
+
