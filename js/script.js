@@ -35,30 +35,31 @@ function operationPlus () {
 }
 
 
-let primoMembro
+let firstOper
 function result() {
       
-    primoMembro = document.getElementById('barra').value
-    if(primoMembro.includes('-')){
-        let secondoMembro = primoMembro.split('-') 
-        barra = +secondoMembro[0]- +secondoMembro[1] 
+    firstOper = document.getElementById('barra').value
+    if(firstOper.includes('-')){
+        let secondOper = firstOper.split('-') 
+        barra = +secondOper[0]- +secondOper[1] 
         document.getElementById('barra').value = barra
     
-    }else if (primoMembro.includes('+')){
-        let secondoMembro = primoMembro.split('+') 
-        barra = +secondoMembro[0]+ +secondoMembro[1] 
+    }else if (firstOper.includes('+')){
+        let secondOper = firstOper.split('+') 
+        barra = +secondOper[0]+ +secondOper[1] 
         document.getElementById('barra').value = barra
 
-    }else if (primoMembro.includes('x')) {
-        let secondoMembro = primoMembro.split('x')
-        barra = +secondoMembro[0] * +secondoMembro[1]
+    }else if (firstOper.includes('x')) {
+        let secondOper = firstOper.split('x')
+        barra = +secondOper[0] * +secondOper[1]
         document.getElementById('barra').value = barra
     }
-    else if (primoMembro.includes('/')) {
-        let secondoMembro = primoMembro.split('/')
-        barra = +secondoMembro[0] / +secondoMembro[1]
+    else if (firstOper.includes('/')) {
+        let secondOper = firstOper.split('/')
+        barra = +secondOper[0] / +secondOper[1]
         document.getElementById('barra').value = barra
     } 
+   
 
 }
 
@@ -69,3 +70,30 @@ function radiceQuadrata () {
     document.getElementById('barra').value = Math.sqrt(radiceQuadrata)
 }
 
+function radiceCubica () {
+    let radiceCubica = +(document.getElementById('barra').value);
+    document.getElementById('barra').value = Math.cbrt(radiceCubica)
+
+}
+
+function coseno () {
+    let coseno = +(document.getElementById('barra').value);
+    document.getElementById('barra').value = Math.cos(coseno)
+}
+
+function seno () {
+    let seno = +(document.getElementById('barra').value);
+    document.getElementById('barra').value = Math.sin(seno)
+}
+
+function potenzaDue () {
+    let potenzaDue = +(document.getElementById('barra').value);
+    document.getElementById('barra').value = Math.pow(potenzaDue, 2)
+
+}
+
+function potenzaTre () {
+    let potenzaTre = +(document.getElementById('barra').value);
+    document.getElementById('barra').value = Math.pow(potenzaTre, 3)
+
+}

@@ -2,25 +2,22 @@ body {
     background-color: #ffffff;
 }
 
-#calc input, #barra {
+#tastiera input, #barra {
     font-size: 50px;
     background-color: #000000;
-    
 }
 
-
 #barra {
-    width:610px;
+    width:770px;
     height:100px;
     text-align: right;
-    margin-left: 0.2rem;
     color: #ffffff;
     border-radius: 5%;
 
       
 }
 
-#calc input {
+#tastiera input {
     width:150px;
     height:100px;
     margin:1px;
@@ -31,7 +28,7 @@ body {
 }
 
 
-#calc input:hover {
+#tastiera input:hover {
     transform: scale(1.2);
     transition-timing-function: ease-in-out, ease-in-out;
     transition-delay: 0.1s;
